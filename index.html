@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage Creek Counseling | Andrea Wilson, LCSW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #F4F1EA 0%, #FDFCF8 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#FDFCF8] text-slate-800">
+
+    <nav class="sticky top-0 z-50 bg-[#FDFCF8]/95 backdrop-blur-sm border-b border-slate-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter text-[#556B2F] flex items-center gap-2">
+                <div class="w-8 h-8 bg-[#E9EDC9] rounded-full flex items-center justify-center text-xs italic">S</div>
+                SAGE CREEK
+            </a>
+
+            <div class="hidden md:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="#" class="hover:text-[#556B2F] transition">Home</a>
+                <a href="#about" class="hover:text-[#556B2F] transition">Meet Andrea</a>
+                <a href="#services" class="hover:text-[#556B2F] transition">Services</a>
+                <a href="resources.html" class="hover:text-[#556B2F] transition">Resources</a>
+                <a href="https://sagecreek-counseling.clientsecure.me/" target="_blank" class="text-[#556B2F] border-b-2 border-[#E9EDC9] pb-1 hover:border-[#556B2F] transition">Client Portal</a>
+                <a href="#contact" class="bg-[#556B2F] text-white px-5 py-2.5 rounded-full hover:bg-[#3E4F22] transition normal-case tracking-normal text-sm">Contact Us</a>
+            </div>
+
+            <button class="md:hidden text-slate-800" onclick="toggleMenu()">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 flex flex-col p-6 space-y-4 shadow-xl">
+            <a href="#" onclick="toggleMenu()" class="font-semibold">Home</a>
+            <a href="#about" onclick="toggleMenu()">Meet Andrea</a>
+            <a href="#services" onclick="toggleMenu()">Services</a>
+            <a href="#resources" onclick="toggleMenu()">Resources</a>
+            <a href="https://sagecreek-counseling.clientsecure.me/" onclick="toggleMenu()" class="text-[#556B2F]">Client Portal</a>
+            <a href="#contact" onclick="toggleMenu()" class="font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero-gradient relative py-20 lg:py-32 px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative z-10">
+                <!--<span class="text-[#8BA888] font-semibold tracking-[0.2em] uppercase text-sm">Your Journey to Healing</span>-->
+                <h1 class="text-5xl lg:text-7xl mt-4 mb-8 text-[#2C3617] leading-tight">Your Journey to
+Healing </h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed border-l-2 border-[#E9EDC9] pl-6">
+                    Seeking to empower individuals and families with the knowledge, tools, and confidence to process past trauma, overcome mental health barriers and create healthier behaviors and relationships in their lives.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://sagecreek-counseling.clientsecure.me/" target="_blank" class="bg-[#556B2F] text-white px-8 py-4 rounded-lg font-semibold shadow-xl hover:bg-[#3E4F22] transition-all transform hover:-translate-y-1">
+                        Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-[#E9EDC9] to-[#CCD5AE] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <!--<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80" alt="Healing Environment" class="relative rounded-2xl shadow-2xl h-[450px] w-full object-cover">-->
+                <img src="https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&q=80" alt="Healing Environment" class="relative rounded-2xl shadow-2xl h-[450px] w-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-5 gap-16 items-center">
+            <div class="md:col-span-2 relative">
+                <div class="aspect-[4/5] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl">
+                    <!--<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" alt="Andrea Wilson, LCSW" class="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition duration-700">-->
+                    <img src="images/Andrea-Wilson.jpg" alt="Andrea Wilson, LCSW" class="w-full h-full object-cover object-top grayscale-[10%] hover:grayscale-0 transition duration-700">
+                </div>
+                <div class="absolute -bottom-4 -right-4 bg-[#E9EDC9] w-24 h-24 rounded-full -z-10"></div>
+            </div>
+            <div class="md:col-span-3">
+                <h2 class="text-4xl mb-2 text-[#2C3617]">Andrea Wilson</h2>
+                <p class="text-[#8BA888] font-medium mb-8 uppercase tracking-widest text-sm">Licensed Clinical Social Worker (LCSW) • she/her</p>
+                <div class="space-y-6 text-slate-700 leading-relaxed text-lg">
+                    <p>Hello! My name is Andrea Wilson and I'm a Licensed Clinical Social Worker (LCSW). I believe each person has the ability to find answers and healing within themselves and my role as a therapist is to provide support and guidance along the journey. I believe our experiences often shape our behaviors and I love working with teens and adults to help them identify patterns resulting from past trauma and attachment wounds.</p>
+                    <!--<p>I believe our experiences often shape our behaviors and I love working with teens and adults to help them identify patterns resulting from past trauma and attachment wounds.</p>-->
+                    <p class="font-semibold text-[#556B2F] italic text-xl serif">"I look forward to working together to set and achieve your goals!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-[#F4F1EA]">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl text-[#2C3617] mb-4">Therapeutic Services</h2>
+                <p class="text-slate-600">Specialized care tailored to your unique history and goals, available both in-person and online.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl mb-6 text-[#556B2F]">Who I Work With</h3>
+                    <ul class="space-y-4 text-slate-600">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-[#8BA888]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            Teens & Adults
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-[#8BA888]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            Individuals & Families
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl mb-6 text-[#556B2F]">Specialties</h3>
+                    <ul class="space-y-4 text-slate-600">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-[#8BA888]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            Trauma & Attachment Wounds
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-[#8BA888]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            Mental Health Barriers
+                        </li>
+                        <li class="flex items-center gap-3 text-[#556B2F] font-medium">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            EMDR & Art Therapy
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#556B2F] text-white p-10 rounded-3xl shadow-lg">
+                    <h3 class="text-2xl mb-6 text-[#E9EDC9]">Insurance & Fees</h3>
+                    <div class="space-y-4 opacity-90 text-sm leading-relaxed">
+                        <p><strong>Insurance:</strong> Currently taking Select Health.</p>
+                        <p><strong>Self-Pay:</strong> Options including Bishop Pay.</p>
+                        <p><strong>Out of Network:</strong> Superbills available for reimbursement.</p>
+                        <div class="pt-4 border-t border-white/20">
+                            <p class="italic">Available in-person in Lindon, UT and online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="resources" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl text-[#2C3617] mb-4">Resources</h2>
+                    <p class="text-slate-600">Materials and tools to support your growth outside of our sessions.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-8 border border-slate-100 rounded-2xl hover:bg-[#FDFCF8] hover:border-[#8BA888] transition group">
+                    <h4 class="font-bold mb-2 group-hover:text-[#556B2F]">Intake Forms</h4>
+                    <p class="text-sm text-slate-500">New patient documentation and privacy policies.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:bg-[#FDFCF8] hover:border-[#8BA888] transition group">
+                    <h4 class="font-bold mb-2 group-hover:text-[#556B2F]">EMDR Guide</h4>
+                    <p class="text-sm text-slate-500">What to expect during your first EMDR session.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:bg-[#FDFCF8] hover:border-[#8BA888] transition group">
+                    <h4 class="font-bold mb-2 group-hover:text-[#556B2F]">Recommended Reading</h4>
+                    <p class="text-sm text-slate-500">Books on attachment and trauma recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <footer id="contact" class="bg-[#2C3617] text-[#F4F1EA] pt-24 pb-12 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 mb-20">
+            <div>
+                <h2 class="text-3xl mb-6 serif tracking-tighter">SAGE CREEK</h2>
+                <p class="opacity-70 leading-relaxed mb-8">
+                    A safe space for healing and personal growth. Based in Lindon, Utah, serving clients locally and virtually.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-[#8BA888] font-bold uppercase tracking-[0.2em] text-[10px] mb-6">Connect</h4>
+                <ul class="space-y-4 opacity-90">
+                    <li>195 N State St, Lindon, UT 84042</li>
+                    <li>385-323-0605</li>
+                    <li><a href="mailto:andrea@sagecreek-counseling.com" class="underline decoration-[#8BA888] underline-offset-4">andrea@sagecreek-counseling.com</a></li>
+                </ul>
+            </div>
+            <div class="bg-[#3E4F22] p-8 rounded-2xl">
+                <h4 class="text-xl mb-4 serif">Consultations</h4>
+                <p class="text-sm mb-6 opacity-80">Reach out via email to schedule your initial session or to ask any questions.</p>
+                <a href="mailto:andrea@sagecreek-counseling.com" class="block w-full text-center bg-[#F4F1EA] text-[#2C3617] py-4 rounded-xl font-bold hover:bg-white transition-colors">
+                    Send an Inquiry
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 text-[10px] uppercase tracking-widest opacity-40 flex justify-between">
+            <span>&copy; 2026 Sage Creek Counseling</span>
+            <span>Lindon, Utah</span>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

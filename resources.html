@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Referrals | Sage Creek Counseling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif;
+         }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+    </style>
+    </style>
+</head>
+<body class="bg-[#FDFCF8] text-slate-800">
+
+    <nav class="sticky top-0 z-50 bg-[#FDFCF8]/95 backdrop-blur-sm border-b border-slate-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tighter text-[#556B2F] flex items-center gap-2">
+                <div class="w-8 h-8 bg-[#E9EDC9] rounded-full flex items-center justify-center text-xs italic">S</div>
+                SAGE CREEK
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="index.html" class="hover:text-[#556B2F] transition">Home</a>
+                <a href="index.html#about" class="hover:text-[#556B2F] transition">Meet Andrea</a>
+                <a href="index.html#services" class="hover:text-[#556B2F] transition">Services</a>
+                <a href="#" class="hover:text-[#556B2F] transition">Resources</a>
+                <a href="https://sagecreek-counseling.clientsecure.me/" target="_blank" class="text-[#556B2F] border-b-2 border-[#E9EDC9] pb-1 hover:border-[#556B2F] transition">Client Portal</a>
+                <a href="#contact" class="bg-[#556B2F] text-white px-5 py-2.5 rounded-full hover:bg-[#3E4F22] transition normal-case tracking-normal text-sm">Contact Us</a>
+            </div>
+            <button class="md:hidden text-slate-800" onclick="toggleMenu()">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 flex flex-col p-6 space-y-4 shadow-xl">
+            <a href="index.html" onclick="toggleMenu()" class="font-semibold">Home</a>
+            <a href="index.html#about" onclick="toggleMenu()">Meet Andrea</a>
+            <a href="index.html#services" onclick="toggleMenu()">Services</a>
+            <a href="#resources" onclick="toggleMenu()">Resources</a>
+            <a href="https://sagecreek-counseling.clientsecure.me/" onclick="toggleMenu()" class="text-[#556B2F]">Client Portal</a>
+            <a href="#contact" onclick="toggleMenu()" class="font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-[#F4F1EA] text-center px-8">
+        <h1 class="text-5xl text-[#2C3617] mb-4">Resources & Referrals</h1>
+        <p class="max-w-2xl mx-auto text-slate-600 leading-relaxed">
+            A curated list of organizations and practitioners to support your journey beyond our sessions.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-8 py-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            
+            <div>
+                <h2 class="text-2xl text-[#556B2F] mb-6 border-b border-[#E9EDC9] pb-2">LGBTQ+ Affirming</h2>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-bold text-lg">The Trevor Project</h4>
+                        <p class="text-sm text-slate-600 mb-2">Crisis support and education for LGBTQ+ youth.</p>
+                        <a href="https://www.thetrevorproject.org" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-lg">Utah Pride Center</h4>
+                        <p class="text-sm text-slate-600 mb-2">Safe space, events, and programs within Utah.</p>
+                        <a href="https://utahpridecenter.org" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl text-[#556B2F] mb-6 border-b border-[#E9EDC9] pb-2">BIPOC Mental Health</h2>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-bold text-lg">Therapy for Black Girls</h4>
+                        <p class="text-sm text-slate-600 mb-2">Find culturally responsive therapists.</p>
+                        <a href="https://www.therapyforblackgirls.com" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-lg">Latinx Therapy</h4>
+                        <p class="text-sm text-slate-600 mb-2">Spanish-speaking and Latinx-affirming providers.</p>
+                        <a href="https://www.latinxtherapy.com" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl text-[#556B2F] mb-6 border-b border-[#E9EDC9] pb-2">Abuse & Trauma</h2>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-bold text-lg">RAINN</h4>
+                        <p class="text-sm text-slate-600 mb-2">National Sexual Assault Hotline & trauma resources.</p>
+                        <a href="https://www.rainn.org" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-lg">The Refuge Utah</h4>
+                        <p class="text-sm text-slate-600 mb-2">24/7 Domestic Violence/Sexual Assault Hotline & Shelter.</p>
+                        <a href="https://therefugeutah.org/" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl text-[#556B2F] mb-6 border-b border-[#E9EDC9] pb-2">Crisis & Assistance</h2>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-bold text-lg">211.org</h4>
+                        <p class="text-sm text-slate-600 mb-2">National database for housing, food, and emergency resources.</p>
+                        <a href="https://www.211.org" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-lg">Food & Care Coalition Utah</h4>
+                        <p class="text-sm text-slate-600 mb-2">Hygiene, laundry, transitional housing, and outreach.</p>
+                        <a href="https://foodandcare.org/" target="_blank" class="text-[#8BA888] text-xs font-semibold hover:underline uppercase tracking-widest">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-[#FDFCF8] border-t border-[#E9EDC9] pt-20">
+            <h2 class="text-4xl text-[#2C3617] mb-12 text-center serif">Therapists in the Area</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Kathy Spencer, LCSW</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Eating Disorders • Body Image • Trauma</p>
+                    <p class="text-sm text-slate-600 mb-6">Works with a dietician for eating disorders. Payment: EMI, Private/HSA, Clergy, DMBA.</p>
+                    <a href="http://www.rosemountaincounseling.com" target="_blank" class="text-[#8BA888] text-sm font-semibold hover:underline">Website →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Holly Brassfield</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Play Therapist (Ages 2+) • Anxiety</p>
+                    <p class="text-sm text-slate-600 mb-6">Payment: BCBS, EMI, Select Health, Clergy Pay, Private Pay.</p>
+                    <a href="https://www.psychologytoday.com/us/therapists/holly-brassfield-american-fork-ut/1129312" target="_blank" class="text-[#8BA888] text-sm font-semibold hover:underline">Psychology Today →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Chelsey Wood</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">OCD • Scrupulosity • PTSD</p>
+                    <p class="text-sm text-slate-600 mb-6">Payment: Select Health, Self Pay, Bishop Pay.</p>
+                    <p class="text-xs text-[#556B2F] font-mono mt-2"><a href="mailto:chelseywoodlcsw@gmail.com" class="text-[#8BA888] text-sm font-semibold hover:underline">chelseywoodlcsw@gmail.com</a></p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Alanna Conlee</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Grief • LGBTQ • Parenting</p>
+                    <p class="text-sm text-slate-600 mb-6">Wide insurance acceptance (BCBS, Aetna, Cigna, Select Health, etc).</p>
+                    <p class="text-xs text-[#556B2F] font-mono mt-2"><a href="mailto:alannaconleelcsw@gmail.com" class="text-[#8BA888] text-sm font-semibold hover:underline">alannaconleelcsw@gmail.com</a></p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Eric Hales</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">LGBTQ • Church Dynamics (Adults)</p>
+                    <p class="text-sm text-slate-600 mb-6">Group for gay men in the church. Payment: Self Pay, DMBA, Clergy Pay.</p>
+                    <a href="https://www.psychologytoday.com/us/therapists/eric-hales-murray-ut/936761" target="_blank" class="text-[#8BA888] text-sm font-semibold hover:underline">Psychology Today →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-[#556B2F] mb-2">Donny Smith</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">EMDR • ART • Neurofeedback</p>
+                    <p class="text-sm text-slate-600 mb-6">Payment: Select Health, BCBS, DMBA, EMI, Cigna, UofU.</p>
+                    <a href="https://www.psychologytoday.com/us/therapists/donny-smith-orem-ut/1072894" target="_blank" class="text-[#8BA888] text-sm font-semibold hover:underline">Website →</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--<footer id="contact" class="bg-[#2C3617] text-[#F4F1EA] py-12 px-8 text-center">
+        <p class="text-sm opacity-50">&copy; 2026 Sage Creek Counseling. Lindon, Utah.</p>
+    </footer>-->
+
+    <footer id="contact" class="bg-[#2C3617] text-[#F4F1EA] pt-24 pb-12 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 mb-20">
+            <div>
+                <h2 class="text-3xl mb-6 serif tracking-tighter">SAGE CREEK</h2>
+                <p class="opacity-70 leading-relaxed mb-8">
+                    A safe space for healing and personal growth. Based in Lindon, Utah, serving clients locally and virtually.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-[#8BA888] font-bold uppercase tracking-[0.2em] text-[10px] mb-6">Connect</h4>
+                <ul class="space-y-4 opacity-90">
+                    <li>195 N State St, Lindon, UT 84042</li>
+                    <li>385-323-0605</li>
+                    <li><a href="mailto:andrea@sagecreek-counseling.com" class="underline decoration-[#8BA888] underline-offset-4">andrea@sagecreek-counseling.com</a></li>
+                </ul>
+            </div>
+            <div class="bg-[#3E4F22] p-8 rounded-2xl">
+                <h4 class="text-xl mb-4 serif">Consultations</h4>
+                <p class="text-sm mb-6 opacity-80">Reach out via email to schedule your initial session or to ask any questions.</p>
+                <a href="mailto:andrea@sagecreek-counseling.com" class="block w-full text-center bg-[#F4F1EA] text-[#2C3617] py-4 rounded-xl font-bold hover:bg-white transition-colors">
+                    Send an Inquiry
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 text-[10px] uppercase tracking-widest opacity-40 flex justify-between">
+            <span>&copy; 2026 Sage Creek Counseling</span>
+            <span>Lindon, Utah</span>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
